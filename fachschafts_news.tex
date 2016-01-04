@@ -12,6 +12,7 @@
 \usepackage{longtable}
 \usepackage{multicol}
 \usepackage{lipsum}
+\usepackage{todonotes}
 
 % For hyperlinks
 \ifpdf
@@ -30,6 +31,7 @@
 
 \renewcommand*\descriptionlabel[1]{\hspace\labelsep
                                 \normalfont\bfseries #1}
+                            
 
 \urlstyle{same}
 
@@ -80,17 +82,20 @@
 \auflage=1
 \jahr=2015
 \newcommand{\Month}{Dezember}
+\newcommand{\name}{fsi log}
+\newcommand{\namemo}{\name \space \Month}
+\newcommand{\nameit}{\texttt{\name}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \jahrpluseins=\jahr
 \advance \jahrpluseins by 1
 
 %%%% Titelseite
-\input{infra/title.tex}
+\input{commons/title.tex}
 
 
 %%%% Copyright und Kontakt
-\input{infra/overview.tex}
+%\input{infra/overview.tex}
 
 
 %%%% Inhaltsverzeichniss
@@ -110,8 +115,8 @@
 %%%% Neues aus der Fachschaft
 %******************************************************
 \section{Neues aus der Fachschaft}
-\input{content/fachschaft/vorwort-fachschaft.tex}
-\newpage
+%\input{content/fachschaft/vorwort-fachschaft.tex}
+%\newpage
 
 \subsection{Erstsemesterveranstaltungen}
 \input{content/fachschaft/erstsemester.tex}
@@ -128,21 +133,41 @@
 \subsection{Spieleabend}
 \input{content/fachschaft/spieleabend.tex}
 
+\newpage
 %******************************************************
 %%%% Neues aus den Gremien
 %******************************************************
 \section{Neues aus den Gremien}
 
+%\subsection{Studienkommisionen}
+
 \subsection{Studierendenrat}
+\todo{@Jappe Text schreiben}
 
 \subsection{Fachschaftsrätevollversammlung}
+\todo{@Jappe Text schreiben}
 
+\subsection{Fakultätsrat}
+\todo{@Jonas3 Text schreiben}
+
+\newpage
 %******************************************************
 %%%% Neues aus dem Institut
 %******************************************************
 \section{Neues aus dem Institut}
 
 \subsection{Neue Professoren}
+\todo{@Marc Luxburg ne Mail schreiben}
+
+\newpage
+%******************************************************
+%%%% Impressum und Rückseite
+%******************************************************
+\section{Impressum}
+\input{commons/impressum.tex}
+
+\section{Nächste Termine}
+\input{commons/termine.tex}
 
 
 \end{document}
