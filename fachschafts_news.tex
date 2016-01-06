@@ -1,107 +1,23 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass{fsinewsletter}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
-\usepackage{eurosym}
-\usepackage{graphicx}
-\usepackage{ifpdf}
-%\usepackage{url}
-%\usepackage{epsfig}
-\usepackage{times}
-\usepackage{longtable}
-\usepackage{multicol}
-\usepackage{lipsum}
-\usepackage{todonotes}
+\SetInfoprof{Ostermann}
+\SetMatheprof{Dorn}
+\SetMonth{Wintersemester}
+\SetAuflage{1}
+\SetJahr{2015}
 
-% For hyperlinks
-\ifpdf
- \usepackage{hyperref}
-\else
- \usepackage[ps2pdf,breaklinks=true]{hyperref}
-\fi
-
-
-\pagestyle{plain}
-% Einrückung der ersten Zeile eines Absatzes
-\setlength{\parindent}{0mm}
-% Abstand zwischen zwei Absätzen
-\setlength{\parskip}{1em plus0.5ex minus0.5ex}
-\setlength{\leftmargin}{0.0em}
-
-\renewcommand*\descriptionlabel[1]{\hspace\labelsep
-                                \normalfont\bfseries #1}
-                            
-
-\urlstyle{same}
-
-%\setlength\leftmargini  {0em}
-
-% Anti-Spam-Obfuscation-Hack
-\newcommand{\At}{@}
-%\newcommand{\At}{\textcircled{$\alpha$}}
-
-\newcommand{\Infoprof}{Ostermann}
-\newcommand{\Matheprof}{Dorn}
-
-\hsize 15.5cm
-\vsize 23cm
-\hoffset-1cm
-\voffset-2.2cm
-\textheight=\vsize
-\textwidth=\hsize
-
-\newif\ifcalvin %% flag für calvin-comics
-
-\begin{document}
 \calvintrue %% comment für blank bilder
 %\calvinfalse %% uncomment für blank bilder
 
-\emergencystretch=2cm
-
-%\font\emf=cmss8 scaled \magstep2
-%\font\abs=cmss8
-\font\cms=cmss17 scaled \magstep2
-\font\vlarge=cmbx12 scaled \magstep5
-%\font\mlarge=cmbx12 scaled \magstep3
-%\font\blarge=cmbx12 scaled \magstep4
-%\font\uni=logos/unilogo
-\newdimen\oldbaselineskp
-\newcount\auflage
-\newcount\jahr
-\newcount\jahrpluseins
-\setcounter{secnumdepth}{0}
-
-%\newcommand*{\url}[1]{\href{#1}{#1}}
-\newcommand*{\email}[1]{\url{#1}}
-\newcommand*{\filename}[1]{\url{#1}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Auflage und Jahr hier eintragen
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\auflage=1
-\jahr=2015
-\newcommand{\Month}{Wintersemester}
-\newcommand{\name}{fsi log}
-\newcommand{\namemo}{\name \space \Month}
-\newcommand{\nameit}{\texttt{\name}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\jahrpluseins=\jahr
-\advance \jahrpluseins by 1
+\begin{document}
 
 %%%% Titelseite
 \input{commons/title.tex}
 
 
-%%%% Copyright und Kontakt
-%\input{infra/overview.tex}
-
-
 %%%% Inhaltsverzeichniss
 \tableofcontents
 \newpage
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Inhalt hier eintragen
