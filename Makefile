@@ -6,10 +6,10 @@ fsi-log:
 	pdflatex $SOURCE
 
 distclean:
-	rm *.pdf *.log *.toc *.aux *.out
+	rm *.pdf *.log *.toc *.aux *.out *.synctex.gz
 
 clean:
-	rm *.log *.toc *.aux *.out
+	rm *.log *.toc *.aux *.out *.synctex.gz
 
 pdf:
 	make fsi-log
