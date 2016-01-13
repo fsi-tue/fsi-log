@@ -1,5 +1,9 @@
+SOURCE=fsi-log.tex
+TARGET=fsi-log.pdf
+PRINT=fsi-log-print.pdf
+
 fsi-log:
-	pdflatex fsi-log.tex
+	pdflatex $SOURCE
 
 distclean:
 	rm *.pdf *.log *.toc *.aux *.out
@@ -13,11 +17,11 @@ pdf:
 
 printable:
 	make fsi-log
-	pdfbook --batch fsi-log.pdf -o fsi-log-print.pdf
+	pdfbook --batch $TARGET -o $PRINT
 
 printable-pdf:
 	make pdf
-	pdfbook --batch fsi-log.pdf -o fsi-log-print.pdf
-	rm fsi-log.pdf
+	pdfbook --batch $TARGET -o $PRINT
+	rm $TARGET
 
 default: fsi-log
