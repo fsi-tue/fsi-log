@@ -1,0 +1,103 @@
+\documentclass{fsinewsletter}
+
+\SetInfoprof{Ostermann}
+\SetMatheprof{Dorn}
+\SetMonth{Wintersemester}
+\SetAuflage{1}
+\SetJahr{2015}
+
+\calvintrue %% comment für blank bilder
+%\calvinfalse %% uncomment für blank bilder
+
+\begin{document}
+
+%%%% Titelseite
+\input{commons/title.tex}
+
+
+%%%% Inhaltsverzeichniss
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Inhalt hier eintragen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Vorwort
+\input{content/vorwort.tex}
+\newpage
+
+%******************************************************
+%%%% Neues aus der Fachschaft
+%******************************************************
+\section{Neues aus der Fachschaft}
+%\input{content/fachschaft/vorwort-fachschaft.tex}
+%\newpage
+
+\subsection{Erstsemesterveranstaltungen}
+\input{content/fachschaft/erstsemester.tex}
+
+\subsection{Bundesfachschaftentagung Informatik}
+\input{content/fachschaft/kif.tex}
+\vfill
+\subsection{Arbeitsräume auf dem Sand}
+\input{content/fachschaft/arbeitsraeume.tex}
+
+\subsection{Studientag 2015}
+\input{content/fachschaft/studientag.tex}
+
+\subsection{Clubhausfest}
+\input{content/fachschaft/clubhausfest.tex}
+
+\subsection{Spieleabend}
+\input{content/fachschaft/spieleabend.tex}
+
+\subsection{Prüfungszeiträume Kognitionswissenschaft}
+\input{content/fachschaft/pruefungszeitraeume.tex}
+
+\subsection{Busverbindung Sand Morgenstelle}
+
+\newpage
+%******************************************************
+%%%% Neues aus den Gremien
+%******************************************************
+\section{Neues aus den Gremien}
+
+%\subsection{Studienkommisionen}
+
+\subsection{Studierendenrat / FSRVV}
+\input{content/gremien/hsp.tex}
+
+\subsection{Fakultätsrat}
+\todo{@Jonas3 Text schreiben}
+
+\newpage
+%******************************************************
+%%%% Neues aus dem Institut
+%******************************************************
+\section{Neues aus dem Institut}
+
+\subsection{Neue Professoren}
+\input{content/institut/neue-profs.tex}
+
+\newpage
+This is an empty page
+\newpage
+\section{Follow Up}
+\input{content/follow-up.tex}
+
+\newpage
+%******************************************************
+%%%% Impressum und Rückseite
+%******************************************************
+\section{Impressum}
+\input{commons/impressum.tex}
+
+%\section{Kontakt}
+%\input{commons/kontakt.tex}
+\newpage
+\section{Nächste Termine}
+\input{commons/termine.tex}
+
+
+\end{document}
