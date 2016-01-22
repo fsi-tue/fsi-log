@@ -14,6 +14,9 @@
 \RequirePackage{multicol}
 \RequirePackage{lipsum}
 \RequirePackage{todonotes}
+\RequirePackage{listings}
+\RequirePackage{color}
+\RequirePackage{DejaVuSans}
 
 % For hyperlinks
 \ifpdf{}
@@ -56,7 +59,13 @@
 %%%% CONSTANTS
 \newcommand{\name}{fsi log}
 \newcommand{\namemo}{\name{} \space \Month}
-\newcommand{\nameit}{\texttt{\name}}                            
+\newcommand{\nameit}{
+	{
+		\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+		\bfseries\itshape
+		\textit{\textbf{\name}}
+	}
+	}                            
 \newcommand{\At}{@} % Anti-Spam-Obfuscation-Hack
 \newcommand{\jahr}{\arabic{jahr}}
 \newcommand{\auflage}{\arabic{auflage}}
