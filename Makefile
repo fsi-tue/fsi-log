@@ -3,8 +3,8 @@ TARGET=fsi-log.pdf
 PRINT=fsi-log-print.pdf
 
 fsi-log:
-	pdflatex fsi-log.tex
-	pdflatex fsi-log.tex
+	lualatex fsi-log.tex
+	lualatex fsi-log.tex
 
 distclean:
 	rm *.pdf *.log *.toc *.aux *.out *.synctex.gz
