@@ -61,9 +61,7 @@
 %%%% CONSTANTS
 \newcommand{\name}{fsi log}
 \newcommand{\namemo}{\name \space \Month}
-\newcommand{\nameit}{
-		\textit{\textbf{\textsf{\name}}}
-	}                            
+\newcommand{\nameit}{\textit{\textbf{\textsf{\name}}}}                            
 \newcommand{\At}{@} % Anti-Spam-Obfuscation-Hack
 \newcommand{\jahr}{\arabic{jahr}}
 \newcommand{\auflage}{\arabic{auflage}}
