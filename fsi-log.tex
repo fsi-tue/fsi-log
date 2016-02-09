@@ -1,0 +1,133 @@
+\documentclass{fsinewsletter}
+
+\SetInfoprof{Ostermann}
+\SetMatheprof{Dorn}
+\SetMonth{Januar}
+\SetAuflage{1}
+\SetJahr{2016}
+\title{}
+\author{}
+
+\setsansfont{DejaVu Sans}
+
+\calvintrue %% comment für blank bilder
+%\calvinfalse %% uncomment für blank bilder
+
+\begin{document}
+
+%%%% Titelseite
+\input{commons/title.tex}
+
+
+%%%% Inhaltsverzeichniss
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Inhalt hier eintragen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Vorwort
+\input{content/vorwort.tex}
+\newpage
+
+%******************************************************
+%%%% Neues aus der Fachschaft
+%******************************************************
+\section{Neues aus der Fachschaft}
+%\input{content/fachschaft/vorwort-fachschaft.tex}
+%\newpage
+
+\subsection{Erstsemesterveranstaltungen}
+\input{content/fachschaft/erstsemester.tex}
+\vfill
+\newpage
+
+\subsection{Bundesfachschaftentagung Informatik}
+\input{content/fachschaft/kif.tex}
+
+\subsection{Studientag 2015}
+\input{content/fachschaft/studientag.tex}
+\vfill
+\newpage
+
+\subsection{Clubhausfest}
+\input{content/fachschaft/clubhausfest.tex}
+
+\subsection{Spieleabend}
+\input{content/fachschaft/spieleabend.tex}
+
+\subsection{Prüfungszeiträume Kognitionswissenschaft}
+\input{content/fachschaft/pruefungszeitraeume.tex}
+\vfill
+
+\subsection{Busverbindung Sand $\leftrightarrow$ Morgenstelle}
+\input{content/fachschaft/busverbindung.tex}
+
+\subsection{LAN Party}
+\input{content/fachschaft/lan.tex}
+
+\vfill
+\newpage
+
+\section{Mailinglisten}
+\input{content/fachschaft/mailinglisten.tex}
+
+%******************************************************
+%%%% Neues aus den Gremien
+%******************************************************
+\section{Neues aus den Gremien}
+
+%\subsection{Studienkommisionen}
+
+\subsection{Studierendenrat / FSRVV}
+\input{content/gremien/hsp.tex}
+
+\subsection{Studentische Vollversammlung}
+\input{content/gremien/studVV.tex}
+
+%\subsection{Fakultätsrat}
+%\todo{@Jonas3 Text schreiben}
+
+\vfill
+\newpage
+%******************************************************
+%%%% Neues aus der Uni
+%******************************************************
+%\section{Neues aus der Uni}
+
+
+%******************************************************
+%%%% Neues aus dem Institut
+%******************************************************
+\section{Neues aus dem Institut}
+\subsection{Arbeitsräume}
+\input{content/institut/arbeitsraeume.tex}
+\vfill
+\newpage
+\section{Neue Professoren}
+\input{content/institut/neue-profs.tex}
+\vfill
+\newpage
+
+
+\section{Follow Up}
+\input{content/follow-up.tex}
+
+\vfill
+\newpage
+%****************************************************** 
+%%%% Impressum und Rückseite
+%******************************************************
+\section{Impressum}
+\input{commons/impressum.tex}
+
+%\section{Kontakt}
+%\input{commons/kontakt.tex}
+\vfill
+\newpage
+\section{Nächste Termine}
+\input{commons/termine.tex}
+
+
+\end{document}
