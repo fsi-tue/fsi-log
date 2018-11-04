@@ -1,29 +1,21 @@
 # fsi-log
 
-fsi-log is the official newsletter of the Fachschaft Informatik of the univesity in Tuebingen.
-## Contribute
-1. Clone this Repository  
-`svn co https://projects.fsi.uni-tuebingen.de/svn/newsletter/trunk newsletter `
-2. Edit or add content
-3. Commit your changes  
-`svn commit -m "<your message>" Path/To/Your/File`  
-4. Maybe you have to add new files:  
-`svn add Path/To/Your/File`  
-After that you should be able to commit it
+fsi-log is the official newsletter of the Fachschaft Informatik of the
+University in Tübingen.
 
+## Contribute
+
+1. Clone/fork this repository
+2. Edit or add content
+3. Commit your changes
+4. Make a pull request or send a patch
 
 ## Release
-1. Clone this Repository  
-`svn co https://projects.fsi.uni-tuebingen.de/svn/newsletter newsletter `
-2. Copy the released fsi-log into the Release folder  
-`cp trunk/ releases/<year>/<month>`
-3. Commit the releases  
-`svn commit -m "release <year> <month>"`
+
+Create a Git tag for the release.
 
 ## Make
-1. Clone this Repository  
-`svn co https://projects.fsi.uni-tuebingen.de/svn/newsletter/trunk newsletter `
-2. Compile the LaTeX  
-`make`
-3. If you just want the PDF  
-`make pdf`
+
+1. Clone this Repository
+2. Run `make` to compile the LaTeX documents
+3. If you just want the PDF: `make pdf`
